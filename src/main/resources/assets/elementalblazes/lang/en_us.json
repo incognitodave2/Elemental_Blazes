@@ -1,6 +1,12 @@
 {
   "item.elementalblazes.redstone_blaze_spawn_egg": "Redstone Blaze Spawn Egg",
   "item.elementalblazes.diamond_blaze_spawn_egg": "Diamond Blaze Spawn Egg",
+  "item.elementalblazes.emerald_blaze_spawn_egg": "Emerald Blaze Spawn Egg",
+  "item.elementalblazes.iron_blaze_spawn_egg": "Iron Blaze Spawn Egg",
+  "item.elementalblazes.netherite_blaze_spawn_egg": "Netherite Blaze Spawn Egg",
+  "item.elementalblazes.coal_blaze_spawn_egg": "Coal Blaze Spawn Egg",
+  "item.elementalblazes.lapis_blaze_spawn_egg": "Lapis Blaze Spawn Egg",
+
   "itemGroup.elementalBlazesTab": "Elemental Blazes"
 
 

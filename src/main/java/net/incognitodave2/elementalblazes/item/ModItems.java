@@ -21,6 +21,26 @@ public class ModItems {
             () -> new ModSpawnEggItem(ModEntityTypes.DIAMOND_BLAZE, 0x854386, 0x674789,
                     new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
 
+    public static final RegistryObject<Item> EMERALD_BLAZE_SPAWN_EGG = ITEMS.register("emerald_blaze_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.EMERALD_BLAZE, 0x854386, 0x674789,
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> IRON_BLAZE_SPAWN_EGG = ITEMS.register("iron_blaze_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.IRON_BLAZE, 0x854386, 0x674789,
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> NETHERITE_BLAZE_SPAWN_EGG = ITEMS.register("netherite_blaze_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.NETHERITE_BLAZE, 0x854386, 0x674789,
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> COAL_BLAZE_SPAWN_EGG = ITEMS.register("coal_blaze_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.COAL_BLAZE, 0x854386, 0x674789,
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> LAPIS_BLAZE_SPAWN_EGG = ITEMS.register("lapis_blaze_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.LAPIS_BLAZE, 0x854386, 0x674789,
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
 
     public static void register(IEventBus eventBus) { ITEMS.register(eventBus);}
 }

@@ -1,8 +1,7 @@
 package net.incognitodave2.elementalblazes;
 
 import net.incognitodave2.elementalblazes.entity.ModEntityTypes;
-import net.incognitodave2.elementalblazes.entity.render.DiamondBlazeRenderer;
-import net.incognitodave2.elementalblazes.entity.render.RedstoneBlazeRenderer;
+import net.incognitodave2.elementalblazes.entity.render.*;
 import net.incognitodave2.elementalblazes.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -62,6 +61,12 @@ public class ElementalBlazes
         });
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.REDSTONE_BLAZE.get(), RedstoneBlazeRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DIAMOND_BLAZE.get(), DiamondBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMERALD_BLAZE.get(), EmeraldBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.IRON_BLAZE.get(), IronBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE.get(), NetheriteBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE.get(), CoalBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE.get(), LapisBlazeRenderer::new);
+
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
