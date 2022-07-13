@@ -1,7 +1,12 @@
 package net.incognitodave2.elementalblazes;
 
 import net.incognitodave2.elementalblazes.entity.ModEntityTypes;
-import net.incognitodave2.elementalblazes.entity.render.*;
+import net.incognitodave2.elementalblazes.entity.custom.TIer1.ObsidianBlazeEntity;
+import net.incognitodave2.elementalblazes.entity.render.RenderTier1.*;
+import net.incognitodave2.elementalblazes.entity.render.RenderTier2.*;
+import net.incognitodave2.elementalblazes.entity.render.RenderTier3.*;
+import net.incognitodave2.elementalblazes.entity.render.RenderTier4.*;
+import net.incognitodave2.elementalblazes.entity.render.RenderTier5.*;
 import net.incognitodave2.elementalblazes.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -66,6 +71,68 @@ public class ElementalBlazes
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE.get(), NetheriteBlazeRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE.get(), CoalBlazeRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE.get(), LapisBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.OBSIDIAN_BLAZE.get(), ObsidianBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.QUARTZ_BLAZE.get(), QuartzBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GOLD_BLAZE.get(), GoldBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COBBLESTONE_BLAZE.get(), CobblestoneBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NATURE_BLAZE.get(), NatureBlazeRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CLAY_BLAZE.get(), ClayBlazeRenderer::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.REDSTONE_BLAZE_TIER_2.get(), RedstoneBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DIAMOND_BLAZE_TIER_2.get(), DiamondBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMERALD_BLAZE_TIER_2.get(), EmeraldBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.IRON_BLAZE_TIER_2.get(), IronBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE_TIER_2.get(), NetheriteBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE_TIER_2.get(), CoalBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE_TIER_2.get(), LapisBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.OBSIDIAN_BLAZE_TIER_2.get(), ObsidianBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.QUARTZ_BLAZE_TIER_2.get(), QuartzBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GOLD_BLAZE_TIER_2.get(), GoldBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COBBLESTONE_BLAZE_TIER_2.get(), CobblestoneBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NATURE_BLAZE_TIER_2.get(), NatureBlazeRendererTier2::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CLAY_BLAZE_TIER_2.get(), ClayBlazeRendererTier2::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.REDSTONE_BLAZE_TIER_3.get(), RedstoneBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DIAMOND_BLAZE_TIER_3.get(), DiamondBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMERALD_BLAZE_TIER_3.get(), EmeraldBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.IRON_BLAZE_TIER_3.get(), IronBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE_TIER_3.get(), NetheriteBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE_TIER_3.get(), CoalBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE_TIER_3.get(), LapisBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.OBSIDIAN_BLAZE_TIER_3.get(), ObsidianBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.QUARTZ_BLAZE_TIER_3.get(), QuartzBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GOLD_BLAZE_TIER_3.get(), GoldBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COBBLESTONE_BLAZE_TIER_3.get(), CobblestoneBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NATURE_BLAZE_TIER_3.get(), NatureBlazeRendererTier3::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CLAY_BLAZE_TIER_3.get(), ClayBlazeRendererTier3::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.REDSTONE_BLAZE_TIER_4.get(), RedstoneBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DIAMOND_BLAZE_TIER_4.get(), DiamondBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMERALD_BLAZE_TIER_4.get(), EmeraldBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.IRON_BLAZE_TIER_4.get(), IronBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE_TIER_4.get(), NetheriteBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE_TIER_4.get(), CoalBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE_TIER_4.get(), LapisBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.OBSIDIAN_BLAZE_TIER_4.get(), ObsidianBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.QUARTZ_BLAZE_TIER_4.get(), QuartzBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GOLD_BLAZE_TIER_4.get(), GoldBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COBBLESTONE_BLAZE_TIER_4.get(), CobblestoneBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NATURE_BLAZE_TIER_4.get(), NatureBlazeRendererTier4::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CLAY_BLAZE_TIER_4.get(), ClayBlazeRendererTier4::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.REDSTONE_BLAZE_TIER_5.get(), RedstoneBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DIAMOND_BLAZE_TIER_5.get(), DiamondBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMERALD_BLAZE_TIER_5.get(), EmeraldBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.IRON_BLAZE_TIER_5.get(), IronBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NETHERITE_BLAZE_TIER_5.get(), NetheriteBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COAL_BLAZE_TIER_5.get(), CoalBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.LAPIS_BLAZE_TIER_5.get(), LapisBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.OBSIDIAN_BLAZE_TIER_5.get(), ObsidianBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.QUARTZ_BLAZE_TIER_5.get(), QuartzBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.GOLD_BLAZE_TIER_5.get(), GoldBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COBBLESTONE_BLAZE_TIER_5.get(), CobblestoneBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.NATURE_BLAZE_TIER_5.get(), NatureBlazeRendererTier5::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.CLAY_BLAZE_TIER_5.get(), ClayBlazeRendererTier5::new);
 
     }
 
